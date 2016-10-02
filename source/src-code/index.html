@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="photogenic">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack-Setup</title>
+</head>
+<body ng-controller="default-controller">
+<div ng-class="{'flash': isActive}" ng-click="activeButton()" ng-repeat="x in products">
+    {{x}}
+</div>
+</body>
+</html>
