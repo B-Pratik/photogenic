@@ -24,7 +24,7 @@ gulp.task('build', function (cb) {
 });
 
 gulp.task('clean', function () {
-    return del.sync(['./build/**', '!./build']);
+    return del.sync(['./build/**', '!./build', '!./build/images','!./build/images/*']);
 });
 
 gulp.task('complete', function (cb) {

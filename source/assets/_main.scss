@@ -1,3 +1,56 @@
 body {
-  background-color: red;
+  padding: 5px 10px 0 10px;
+  background: #F0C27B;
+  background: linear-gradient(to left, #F0C27B, #4B1248);
+}
+
+.image-container {
+  border-radius: 5px;
+  margin: 5px;
+  height: 200px;
+  width: 250px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+
+  &:focus,
+  &:hover{
+    img {
+      filter: grayscale(100%) blur(5px);
+    }
+
+    .title,
+    .subtitle {
+      visibility: visible;
+    }
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .title {
+    color: orange;
+    bottom: 40px;
+    font-size: 22px;
+  }
+
+  .titles {
+    position: absolute;
+    z-index: 9;
+    visibility: hidden;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    color: red;
+    bottom: 10px;
+    font-size: 20px;
+  }
 }

@@ -4,7 +4,10 @@
 
 import '../assets/index.scss';
 
+import photoComponent from './component/index';
+
 import defaultController from './controller/default-controller';
 
 angular.module('photogenic', [])
-    .controller('default-controller', defaultController);
+  .component('photo', photoComponent)
+  .controller('default-controller', defaultController);
