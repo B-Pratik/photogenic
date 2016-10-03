@@ -54,3 +54,32 @@ body {
     font-size: 20px;
   }
 }
+
+.detailed-photo{
+  clear: both;
+  width:100%;
+  color: white;
+
+  .title {
+    float: left;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .detail {
+    float: left;
+    width: 70%;
+    clear: left;
+  }
+
+  img {
+    float: right;
+    width: 30%;
+    min-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
