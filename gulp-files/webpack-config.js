@@ -14,7 +14,6 @@ module.exports = {
     entry: {
         app: path.resolve('source', 'src-code/app.js'),
         vendor: [
-            'bootstrap/dist/css/bootstrap.min.css',
             'angular'
         ]
     },

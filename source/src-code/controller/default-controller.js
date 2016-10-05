@@ -46,11 +46,12 @@ export default function defaultController($scope, $timeout) {
     if (currentElement === index) {
       return;
     }
-    var contentTr = angular.element('<div class="detailed-photo fadeInDown"><hr>' +
-      '<div class="title">' + currentObj.title + '</div>' +
-      '<div class="detail">' + _dummyFullDetail + '</div>' +
-      '<img src="' + currentObj.url + '">' +
-      '<hr></div>');
+    var contentTr = angular.element('<div class="detailed-photo fadeInDown pull-left">' +
+      '<div class="single-line pull-left"></div>' +
+      '<img class="pull-left" src="' + currentObj.url + '">' +
+      '<div class="titles pull-left"><div class="title pull-left">' + currentObj.title + '</div>' +
+      '<div class="detail pull-left">' + _dummyFullDetail + '</div></div>' +
+      '<div class="single-line pull-left"></div></div>');
 
     angular.element(event.currentTarget).after(contentTr);
     currentElement = index;

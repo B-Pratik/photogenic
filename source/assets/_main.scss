@@ -14,7 +14,7 @@ body {
   position: relative;
 
   &:focus,
-  &:hover{
+  &:hover {
     img {
       filter: grayscale(100%) blur(5px);
     }
@@ -55,10 +55,19 @@ body {
   }
 }
 
-.detailed-photo{
+.pull-left {
+  float: left;
+}
+
+.detailed-photo {
   clear: both;
-  width:100%;
+  width: 100%;
   color: white;
+
+  .titles {
+    width: 415px;
+    margin-left: 10px;
+  }
 
   .title {
     float: left;
@@ -73,13 +82,15 @@ body {
   }
 
   img {
-    float: right;
-    width: 30%;
+    float: left;
     min-width: 150px;
-    margin-bottom: 10px;
+    min-height: 110px;
   }
 
-  hr {
-    width: 100%;
+  .single-line {
+    width: 90%;
+    margin: 10px auto 10px auto;
+    height: 1.5px;
+    background-color: #f0ad4e;
   }
 }
